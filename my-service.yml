@@ -1,0 +1,10 @@
+server:
+  port: ${PORT:8102}
+
+name: Jack
+
+endpoints:
+  health:
+    sensitive: false
+  shutdown:
+    enabled: true
