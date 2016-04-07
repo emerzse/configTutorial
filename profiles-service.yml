@@ -4,5 +4,5 @@ server:
 spring:
   data:
     mongodb:
-      host: ${mongoserver:localhost}
+      host: ${mongoserver:dockerhost}
       port: 27017
