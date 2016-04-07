@@ -1,0 +1,17 @@
+server:
+  port: 8761
+
+# management:
+  # context-path: /admin
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+  instance:
+#   removes the 'NullPointerException' due to a single-node configuration
+    hostname: localhost
+    # statusPageUrlPath: /admin/info
+    # healthCheckUrlPath: /admin/health
