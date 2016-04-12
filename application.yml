@@ -11,7 +11,7 @@ eureka:
     instanceInfoReplicationIntervalSeconds: 5
     initialInstanceInfoReplicationIntervalSeconds: 5
     serviceUrl:
-      defaultZone: ${service-registry.uri:http://127.0.0.1:8761}/eureka/
+      defaultZone: ${service-registry.uri:http://dockerhost:8761}/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 3
     prefer-ip-address: true
