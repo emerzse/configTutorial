@@ -1,8 +1,8 @@
 server:
-  port: ${PORT:8101}
+  port: ${PORT:8104}
 
 spring:
   data:
     mongodb:
-      host: ${mongoserver:localhost}
+      host: ${mongoserver:dockerhost}
       port: 27017

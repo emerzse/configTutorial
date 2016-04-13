@@ -12,6 +12,7 @@ eureka:
     waitTimeInMsWhenSyncEmpty: 0
   instance:
 #   removes the 'NullPointerException' due to a single-node configuration
-    hostname: localhost
+    hostname: dockerhost
+#   hostname: localhost
     # statusPageUrlPath: /admin/info
     # healthCheckUrlPath: /admin/health
