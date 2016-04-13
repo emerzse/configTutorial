@@ -1,0 +1,9 @@
+java -jar -Dconfig-service.uri=http://dockerhost:8103 build\libs\accounts-service-eureka-0.0.1.jar //////docker configbol elindithato java app comand parancsa
+
+echo {"username" : "dave"} | curl -H "Content-type:application/json" -d @- http://localhost:8101/accounts //// account service nel beinsertalni egz felhasznalot
+
+echo { "key":"dave", "fullName":"dave beck" } | curl -H "Content-Type: application/json" -d @- http://localhost:8104/profiles ////// profiles-services , profile insertalas
+
+curl -F "file=@C:\ownprojectZsg\home1.jpg" http://localhost:8104/profiles/john/photos ///profile service be photo feltoltes
+
+docker run --name EurekaService -d --add-host dockerhost:192.168.99.101 -p 8761:8761 msvcdojo/eureka-service:0.0.1 /////dockerban elinditani egz imagest ugy hogy ha masik dockerportott lasson.

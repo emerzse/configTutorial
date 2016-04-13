@@ -1,0 +1,7 @@
+FROM java:8
+MAINTAINER Zsolt Golya "emerzse@gmail.com"
+VOLUME /tmp
+EXPOSE 8761
+ADD ${jar.baseName}-${jar.version}.jar ${project.name}.jar
+# RUN bash -c 'touch /${project.name}.jar'
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom" ,"-jar", "/${project.name}.jar" ]
