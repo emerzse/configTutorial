@@ -1,8 +1,0 @@
-spring:
-  profiles:
-    active: service
-  application:
-    name: accounts
-  cloud:
-    config:
-      uri: http://dockerhost:8103
